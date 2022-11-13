@@ -117,6 +117,12 @@ void SendBluetoothMessage(PatientInformation PatientToSendInformation)
   Serial1.println(PatientToSendInformation.GlucoseLevel);
 }
 
+/***************************************************************************
+ * Function Name: CommandeInsuline
+ * Description:  Calculate the amount of insuline needed
+ * Parameters: 
+ * Return: 
+***************************************************************************/
 
 float CommandeInsuline(){
   comm2 = comm1;

@@ -13,6 +13,7 @@ extern boolean alerte;
 int LastGlucoseLevel = 0;
 extern float NewGlucoseLevel;
   
+
 void setupDisplay() 
 {
   TFT_BL_ON;      // turn on the background light
@@ -23,6 +24,12 @@ void setupDisplay()
   Tft.drawString("Diabete", 10, 10, 6, WHITE, LANDSCAPE);
 }
 
+/***************************************************************************
+ * Function Name: TestTouche
+ * Description:  See if the Display is touched 
+ * Parameters: 
+ * Return: 
+***************************************************************************/
 int TestTouche()
 {
       Point p = ts.getPoint();
@@ -33,6 +40,12 @@ int TestTouche()
   return 0;
 }
 
+/***************************************************************************
+ * Function Name: MenuInsuline
+ * Description:  Show the Glucose level 
+ * Parameters: 
+ * Return: 
+***************************************************************************/
 
 void MenuGlycemie()
 {
@@ -70,6 +83,12 @@ void MenuGlycemie()
   return;
 } 
 
+/***************************************************************************
+ * Function Name: MenuInsuline
+ * Description:  Show the insuline level 
+ * Parameters: 
+ * Return: 
+***************************************************************************/
 
 void MenuInsuline()
 {
@@ -89,6 +108,12 @@ void MenuInsuline()
     }
 }
 
+/***************************************************************************
+ * Function Name: MenuAlert
+ * Description: Draw the display if tha glucose level is dangerous 
+ * Parameters: 
+ * Return: 
+***************************************************************************/
 
 void MenuAlert()
 {
